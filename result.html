@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+
+    <style>
+        body {
+            background: #fce4ec;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        ul {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+<h2>{{name}} Health Report</h2>
+
+<p><b>BMI:</b> {{bmi}}</p>
+
+<ul>
+{% for r in report %}
+<li>{{r}}</li>
+{% endfor %}
+</ul>
+
+<h3 style="color: {{color}}">{{final}}</h3>
+
+<button onclick="window.print()" style="padding:10px; background:#ff4d6d; color:white; border:none; border-radius:5px;">
+Download Report
+</button>
+
+<h3>💡 Suggestions</h3>
+<ul>
+{% for s in suggestions %}
+<li>{{s}}</li>
+{% endfor %}
+</ul>
+
+</div>
+
+</body>
+</html>

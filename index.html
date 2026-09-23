@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Health System</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #ffdde1, #ee9ca7);
+            font-family: Arial;
+            text-align: center;
+        }
+
+        .box {
+            background: white;
+            width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        input {
+            padding: 8px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            background: #ff4d6d;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<h1>💖 Smart Health Care System</h1>
+
+<div class="box">
+
+<form action="/result" method="post">
+
+<div class="grid">
+<input name="name" placeholder="Name">
+<input name="age" placeholder="Age">
+
+<input name="gender" placeholder="Gender">
+<input name="heart" placeholder="Heart Rate">
+
+<input name="temp" placeholder="Temperature">
+<input name="oxygen" placeholder="Oxygen Level">
+
+<input name="bp" placeholder="Blood Pressure">
+<input name="weight" placeholder="Weight">
+
+<input name="height" placeholder="Height">
+<input name="sleep" placeholder="Sleep Hours">
+
+<input name="water" placeholder="Water Intake">
+<input name="exercise" placeholder="Exercise (yes/no)">
+</div>
+
+<button type="submit">Check Health</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
